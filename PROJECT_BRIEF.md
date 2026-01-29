@@ -12,6 +12,11 @@ A Next.js marketing site for **Playcrafting**, a company that:
 
 This site was migrated from Bubble.io to Next.js for better performance and maintainability.
 
+## Live URLs
+
+- **Live site:** https://playcrafting-site.netlify.app
+- **GitHub repo:** https://github.com/moncada-julian/playcrafting-site
+
 ## Current State
 
 **Working:**
@@ -107,15 +112,18 @@ Things the project owner would appreciate input on:
 
 ## Areas to Work On
 
-**High priority:**
+**Proposed next steps (discuss with collaborator):**
+
+1. **Add newsletter signup** - The existing Playcrafting site has a newsletter signup. We should add one here, likely in the footer or as a section on the home page. Could use Mailchimp, ConvertKit, or similar.
+
+2. **Add videos** - The existing site has video content that we didn't migrate. Review the current playcrafting.com site and add any videos that should be included here.
+
+3. **Remove unwanted content** - Review all pages with the collaborator and remove anything that's outdated or shouldn't be included. This is a fresh start, so we can trim what's not needed.
+
+**Technical tasks:**
 - Implement form submissions (see `app/contact/page.tsx` and `app/developers/page.tsx` - both have TODO comments)
 - Add `metadataBase` to `app/layout.tsx` for proper OG image URLs
-- Deploy configuration
-
-**Medium priority:**
 - Form validation and loading states
-- Accessibility improvements
-- Performance optimization
 
 **If time allows:**
 - Page transition animations
