@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 243, 252, 248;
+  --background-rgb: 0, 1, 35;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Lato', sans-serif;
+}
+
+/* Bubble-style BBCode text formatting */
+.rich-text b, .rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text a {
+  color: #FF0F7B;
+  text-decoration: underline;
+}
+
+.rich-text a:hover {
+  color: #F96D49;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000123;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3E485A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF0F7B;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
