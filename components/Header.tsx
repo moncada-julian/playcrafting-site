@@ -21,8 +21,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white/90 backdrop-blur-sm shadow-md" : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
+          scrolled ? "shadow-md" : ""
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -47,11 +47,7 @@ export default function Header() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`px-3 py-2 text-small font-medium transition-colors ${
-                    scrolled
-                      ? "text-pc-dark hover:text-pc-pink"
-                      : "text-pc-light hover:text-pc-pink"
-                  }`}
+                  className="px-3 py-2 text-small font-medium transition-colors text-pc-dark hover:text-pc-pink"
                 >
                   {link.label}
                 </a>
@@ -59,11 +55,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 text-small font-medium transition-colors ${
-                    scrolled
-                      ? "text-pc-dark hover:text-pc-pink"
-                      : "text-pc-light hover:text-pc-pink"
-                  }`}
+                  className="px-3 py-2 text-small font-medium transition-colors text-pc-dark hover:text-pc-pink"
                 >
                   {link.label}
                 </Link>
@@ -78,7 +70,7 @@ export default function Header() {
             aria-label="Open menu"
           >
             <svg
-              className={`w-6 h-6 ${scrolled ? "text-pc-dark" : "text-pc-light"}`}
+              className="w-6 h-6 text-pc-dark"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
