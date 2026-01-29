@@ -120,6 +120,8 @@ Things the project owner would appreciate input on:
 
 3. **Remove unwanted content** - Review all pages with the collaborator and remove anything that's outdated or shouldn't be included. This is a fresh start, so we can trim what's not needed.
 
+4. **TODO: Audit content for removal** - Go through each page and identify what content should be removed or updated. Make a checklist of sections/pages to review.
+
 **Technical tasks:**
 - Implement form submissions (see `app/contact/page.tsx` and `app/developers/page.tsx` - both have TODO comments)
 - Add `metadataBase` to `app/layout.tsx` for proper OG image URLs

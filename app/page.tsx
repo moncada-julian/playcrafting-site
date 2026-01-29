@@ -16,7 +16,7 @@ export default function Home() {
             src="/images/misc/playnyc-crowd.jpeg"
             alt="Play NYC crowd"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-70"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-pc-dark/50 via-pc-dark/70 to-pc-dark" />
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button href="/work" variant="outline">
+            <Button href="/work">
               Want to learn more?
             </Button>
           </div>
@@ -140,9 +140,11 @@ export default function Home() {
                 convention, bringing together game developers, fans, and industry leaders for an
                 unforgettable weekend of gaming.
               </p>
-              <Button href="https://play-nyc.com" external>
-                Visit the event site here
-              </Button>
+              <div className="text-center">
+                <Button href="https://play-nyc.com" external>
+                  Visit the event site here
+                </Button>
+              </div>
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden">
               <Image

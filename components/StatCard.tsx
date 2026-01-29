@@ -8,9 +8,7 @@ export default function StatCard({ value, label, highlight = false }: StatCardPr
   return (
     <div className="text-center p-6">
       <div
-        className={`text-4xl md:text-5xl font-bold mb-2 ${
-          highlight ? "text-pc-pink" : "text-pc-light"
-        }`}
+        className="text-4xl md:text-5xl font-bold mb-2 text-white"
       >
         {value}
       </div>

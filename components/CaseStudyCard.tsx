@@ -26,8 +26,7 @@ export default function CaseStudyCard({
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-pc-dark/80 to-transparent" />
-      </div>
+              </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-pc-light mb-2 group-hover:text-pc-pink transition-colors">
           {title}
